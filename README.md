@@ -7,7 +7,6 @@ Types of Calculators currently implemented into the application:<br>
 -Basic Calculator <br>
 
 Types of Calculators eventually being implemented: <br>
--Graphing Calculator
--Percentage Calculator
--GPA Calculator
--
+-Graphing Calculator <br>
+-Percentage Calculator <br>
+-GPA Calculator <br>
