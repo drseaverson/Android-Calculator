@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button basicCalcButton;
+    Button basicCalcButton, gradeCalcButton, graphCalcButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +16,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         basicCalcButton = findViewById(R.id.basicCalcButton);
+        gradeCalcButton = findViewById(R.id.gradeCalcButton);
+        graphCalcButton = findViewById(R.id.graphCalcButton);
+
         basicCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switchActivities(BasicCalculator.class);
+            }
+        });
+
+        gradeCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switchActivities(GradeCalculator.class);
+            }
+        });
+
+        graphCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switchActivities(GraphCalculator.class);
             }
         });
     }
